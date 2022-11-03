@@ -18,11 +18,12 @@
             ]
         ]
     },
+    "Name": "CosMx RNA Data Types Viz Test",
     "Appendix": "For more information on NanoString CosMx technology visit [**our website**](https://nanostring.com/products/cosmx-spatial-molecular-imager/single-cell-imaging-overview/).\n\nDetails of the performance of GeoMx Whole Transcriptome Atlas (WTA) have been [**published**](https://doi.org/10.1101/2021.09.29.462442).\n\nMinerva is an open-source software package that was developed by Laboratory of Systems Pharmacology at Harvard University and is available [**here**](https://github.com/labsyspharm/minerva-story/wiki). We would like to thank Jeremy Muhlich and John Thomas Hoffer for assistance in enabling Minerva features to support the Spatial Organ Atlas.\n\nSources:\n* Rashid R, Chen YA, Hoffer J, et al. Narrative online guides for the interpretation of digital-pathology images and tissue-atlas data. Nat Biomed Eng. Published online November 8, 2021:1-12. [doi:10.1038/s41551-021-00789-8](https://doi.org/10.1038/s41551-021-00789-8)\n* Hoffer J, Rashid R, Muhlich JL, et al. Minerva: a light-weight, narrative image browser for multiplexed tissue images. Journal of Open Source Software. 2020;5(54):2579. [doi:10.21105/joss.02579](https://doi.org/10.21105/joss.02579)",
     "Stories": [
         {
             "Name": "",
-            "Description": "",
+            "Description": "Welcome to this CosMx test Minerva Story. The objectives of this Story are to test the following items:\n* Cell segmentation visualization\n* Multiple channels in CosMx OME-TIFF\n* RNA density visualization\nIt is only one FOV.",
             "Waypoints": [
                 {
                     "Name": "Waypoint 1",
