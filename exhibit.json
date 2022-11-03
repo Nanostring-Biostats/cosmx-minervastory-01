@@ -1,0 +1,212 @@
+{
+    "Images": [
+        {
+            "Name": "i0",
+            "Description": "",
+            "Path": "images/FOV23-221102",
+            "Width": 5472,
+            "Height": 3648,
+            "MaxLevel": 0
+        }
+    ],
+    "Header": "![image](img/cosmx_screengrab.png)",
+    "Rotation": 0,
+    "Layout": {
+        "Grid": [
+            [
+                "i0"
+            ]
+        ]
+    },
+    "Stories": [
+        {
+            "Name": "",
+            "Description": "",
+            "Waypoints": [
+                {
+                    "Name": "Waypoint 1",
+                    "Description": "This is the first waypoint. Check out segmentation!\n* Channel 1 = 488 nm, CD298/B2M\n* Channel 2 = 532 nm, PanCK\n* Channel 3 = 594 nm, Glucagon\n* Channel 4 = 647 nm, Insulin\n* Channel 5 = UV, DAPI",
+                    "Arrows": [],
+                    "Overlays": [],
+                    "Group": "Nuclei",
+                    "Masks": [
+                        "Segmentation"
+                    ],
+                    "ActiveMasks": [
+                        "Segmentation"
+                    ],
+                    "Zoom": 1,
+                    "Pan": [
+                        0.5193713767212158,
+                        0.3215852481853202
+                    ]
+                },
+                {
+                    "Name": "Waypoint 2",
+                    "Description": "Check out cell typing! The final Story will not have all cells as one mask.",
+                    "Arrows": [],
+                    "Overlays": [],
+                    "Group": "All Markers",
+                    "Masks": [
+                        "Cell Types",
+                        "Segmentation"
+                    ],
+                    "ActiveMasks": [
+                        "Cell Types"
+                    ],
+                    "Zoom": 4,
+                    "Pan": [
+                        0.5193713767212158,
+                        0.3215852481853202
+                    ]
+                },
+                {
+                    "Name": "Waypoint 3",
+                    "Description": "RNA spots for one target are shown here. The three levels of masks shown below indicate RNA spot density. 'Level3' is the greatest spot density. Note that the **n** levels can be condensed into one mask, e.g., the mouse dev gene expression masks. That was not done here in the interest of time. It's a post-Minerva Author step done with a custom Python script to collapse different masks together.\n\nNote fiducials. See arrow for example.",
+                    "Arrows": [
+                        {"Text": "Fiducial", "HideArrow": false, "Point": [0.514, 0.39], "Angle": 60}
+                    ],
+                        "Overlays": [],
+                    "Group": "All Markers",
+                    "Masks": [
+                        "Level1",
+                        "Level2",
+                        "Level3"
+                    ],
+                    "ActiveMasks": [
+                        "Level1",
+                        "Level2",
+                        "Level3"
+                    ],
+                    "Zoom": 4,
+                    "Pan": [
+                        0.5193713767212158,
+                        0.3215852481853202
+                    ]
+                }
+            ]
+        }
+    ],
+    "Masks": [
+        {
+            "Path": "Cell-Types",
+            "Name": "Cell Types",
+            "Colors": [
+                "ffffff"
+            ],
+            "Channels": [
+                "Cell Types"
+            ]
+        },
+        {
+            "Path": "Segmentation",
+            "Name": "Segmentation",
+            "Colors": [
+                "ffffff"
+            ],
+            "Channels": [
+                "Segmentation"
+            ]
+        },
+        {
+            "Path": "Level1",
+            "Name": "Level1",
+            "Colors": [
+                "ffffff"
+            ],
+            "Channels": [
+                "Level1"
+            ]
+        },
+        {
+            "Path": "Level2",
+            "Name": "Level2",
+            "Colors": [
+                "ffffff"
+            ],
+            "Channels": [
+                "Level2"
+            ]
+        },
+        {
+            "Path": "Level3",
+            "Name": "Level3",
+            "Colors": [
+                "ffffff"
+            ],
+            "Channels": [
+                "Level3"
+            ]
+        }
+    ],
+    "Groups": [
+        {
+            "Name": "All Markers",
+            "Path": "All-Markers_0__CD298--1__PanCK--2__Glucagon--3__Insulin--4__Nuclei",
+            "Colors": [
+                "ff0000",
+                "00ff00",
+                "ff00ff",
+                "ffff00",
+                "0000ff"
+            ],
+            "Channels": [
+                "CD298",
+                "PanCK",
+                "Glucagon",
+                "Insulin",
+                "Nuclei"
+            ]
+        },
+        {
+            "Name": "CD298",
+            "Path": "CD298_0__CD298",
+            "Colors": [
+                "ff0000"
+            ],
+            "Channels": [
+                "CD298"
+            ]
+        },
+        {
+            "Name": "PanCK",
+            "Path": "PanCK_1__PanCK",
+            "Colors": [
+                "00ff00"
+            ],
+            "Channels": [
+                "PanCK"
+            ]
+        },
+        {
+            "Name": "Glucagon",
+            "Path": "Glucagon_2__Glucagon",
+            "Colors": [
+                "ff00ff"
+            ],
+            "Channels": [
+                "Glucagon"
+            ]
+        },
+        {
+            "Name": "Insulin",
+            "Path": "Insulin_3__Insulin",
+            "Colors": [
+                "ffff00"
+            ],
+            "Channels": [
+                "Insulin"
+            ]
+        },
+        {
+            "Name": "Nuclei",
+            "Path": "Nuclei_4__Nuclei",
+            "Colors": [
+                "0000ff"
+            ],
+            "Channels": [
+                "Nuclei"
+            ]
+        }
+    ]
+}
