@@ -64,7 +64,7 @@
                 },
                 {
                     "Name": "Waypoint 3",
-                    "Description": "RNA spots for one target are shown here. The three levels of masks shown below indicate RNA spot density. 'Level3' is the greatest spot density, that is, a pixel with the largest number of RNA spots underneath it. Note that the **n** levels can be condensed into one mask, e.g., the mouse dev gene expression masks. That was not done here in the interest of time. It's a post-Minerva Author step done with a custom Python script to collapse different masks together.\nThe concern here was that having each pixel being the same color, regardless of the number of RNA spots at that location, would make a blob. We wanted to test out a heatmap, similar to this image:\n ![image](img/RNA_spot_density_heatmap.png) This is still in development.\n\nNote we can distinguish fiducials where RNA spots are excluded. See the arrow on the base image.",
+                    "Description": "RNA spots for all targets are shown here. Note the opacity is 50% for the masks. The three levels of masks shown below indicate RNA spot density. 'Level3' is the greatest spot density, that is, a pixel with the largest number of RNA spots underneath it. Note that the *n* levels can be condensed into one mask, e.g., the mouse dev gene expression masks. That was not done here in the interest of time. It's a post-Minerva Author step done with a custom Python script to collapse different masks together.\nThe concern here was that having each pixel being the same color, regardless of the number of RNA spots at that location, would make a blob. We wanted to test out a heatmap, similar to this image:\n ![image](img/RNA_spot_density_heatmap.png) This is still in development.\n\nNote we can distinguish fiducials where RNA spots are excluded. See the arrow on the base image.",
                     "Arrows": [
                         {"Text": "Fiducial", "HideArrow": false, "Point": [0.514, 0.39], "Angle": 60}
                     ],
@@ -80,7 +80,27 @@
                         "Level2",
                         "Level3"
                     ],
-                    "Zoom": 4,
+                    "Zoom": 3,
+                    "Pan": [
+                        0.5193713767212158,
+                        0.3215852481853202
+                    ]
+                },
+                {
+                    "Name": "Waypoint 4",
+                    "Description": "RNA spots for all targets are shown here. One one color is used for all spots. Note the opacity is 100%.\n\nNote we can distinguish fiducials where RNA spots are excluded. See the arrow on the base image.",
+                    "Arrows": [
+                        {"Text": "Fiducial", "HideArrow": false, "Point": [0.514, 0.39], "Angle": 60}
+                    ],
+                        "Overlays": [],
+                    "Group": "All Markers",
+                    "Masks": [
+                        "CombinedSpots"
+                    ],
+                    "ActiveMasks": [
+                        "CombinedSpots"
+                    ],
+                    "Zoom": 3,
                     "Pan": [
                         0.5193713767212158,
                         0.3215852481853202
@@ -138,6 +158,16 @@
             ],
             "Channels": [
                 "Level3"
+            ]
+        },
+        {
+            "Path": "CombinedSpots",
+            "Name": "CombinedSpots",
+            "Colors": [
+                "ffffff"
+            ],
+            "Channels": [
+                "CombinedSpots"
             ]
         }
     ],
